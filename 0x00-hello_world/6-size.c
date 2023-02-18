@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
  * main - Entry point
+ *
  * print size of bytes in characters
  * Return: Always 0 (Success)
  */
