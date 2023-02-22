@@ -1,17 +1,10 @@
-#include <unistd.h>
+#include <stdio.h>
 /**
  * print_alphabet - Entry point
  * print lowercase alphabets then newline
  * Return: void
  */
-void print_alphabet(void)
+int _putchar(char c)
 {
-	char letter = 'a';
-
-	while (letter <= 'z')
-	{
-		_putchar(letter);
-		letter++;
-	}
-	_putchar('\n');
+	return (write(1, &c, 1));
 }
