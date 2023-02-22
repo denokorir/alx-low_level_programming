@@ -2,7 +2,7 @@
 /**
  * _islower - checking for lowercase
  * @c: interger value
- *Return: lower if true, upper if false
+ *Return: 1 if true, 0 if false
  */
 int _islower(int c)
 {
@@ -12,8 +12,8 @@ int _islower(int c)
 	{
 		if (c == x)
 		{
-			return (lower);
+			return (1);
 		}
 	}
-	return (upper);
+	return (0);
 }
