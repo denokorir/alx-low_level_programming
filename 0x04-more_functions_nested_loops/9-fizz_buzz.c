@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 /**
  * main - entry point
  * print fizz for multiples of 3, buzz for multiples of 5
@@ -9,9 +9,9 @@ int main(void)
 {
 	int i;
 
-	for (int i = 1; i <= 100; i++)
+	for (i = 1; i <= 100; i++)
 	{
-		if (i % 3 == 0 && !(i % 5 ==0))
+		if (i % 3 == 0 && !(i % 5 == 0))
 			printf("Fizz");
 		else if (i % 5 == 0 && !(i % 3 == 0))
 			printf("Buzz");
