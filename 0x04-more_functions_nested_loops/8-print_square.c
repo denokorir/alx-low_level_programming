@@ -4,14 +4,21 @@
  * @size: integer variable
  * Return: Always 0
  */
-void print_square(int size)
+void print_square(int a)
 {
-	int row, column;
+	int i = 0, ii;
 
-	for (row = 1; row <= size; row++)
+	while (i < a && a > 0)
 	{
-		for (column = 1; column <= size; column++)
+		ii = 0;
+		while (ii < a)
+		{
 			_putchar('#');
+			ii++;
+		}
+		_putchar('\n');
+		i++;
 	}
-	_putchar('\n');
+	if (i == 0)
+		_putchar('\n');
 }
