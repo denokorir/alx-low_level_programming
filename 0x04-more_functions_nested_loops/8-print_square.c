@@ -2,7 +2,7 @@
 /**
  * print_square - print a square
  * @size: integer variable
- * Return: void
+ * Return: Always 0
  */
 void print_square(int size)
 {
@@ -12,6 +12,6 @@ void print_square(int size)
 	{
 		for (column = 1; column <= size; column++)
 			_putchar('#');
-		_putchar('\n');
 	}
+	_putchar('\n');
 }
