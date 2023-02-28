@@ -2,7 +2,6 @@
 /**
  * puts_half - print half of a string
  * the second half
- * @n: number of characters
  * @str: variable
  * Return: 0
  */
@@ -12,7 +11,7 @@ void puts_half(char *str)
 
 	while (str[string] != '\0')
 		string++;
-	 
+
 	if (string + 1 % 2 != '0')
 		x = (string - 1) / 2;
 
