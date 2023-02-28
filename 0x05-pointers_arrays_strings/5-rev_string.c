@@ -10,8 +10,10 @@ void rev_string(char *s)
 	char ch;
 
 	for (x = 0; s[x] != '\0'; ++x)
+		;
 
 	for (y = 0; y < x / 2; ++y)
+		;
 	{
 		ch = s[y];
 		s[y] = s[x - 1 - y];
