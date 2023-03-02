@@ -4,6 +4,9 @@
  * similar to _strcat fn, with exceptions
  * it will use at most n bytes from src
  * src does not need to be null-terminated if it contains n or more bytes
+ * @dest: var
+ * @src: var
+ * @n: int
  * Return: pointer to dest
  */
 char *_strncat(char *dest, char *src, int n)
@@ -19,7 +22,7 @@ char *_strncat(char *dest, char *src, int n)
 	j = 0;
 	while (j < n && src[j] != '\0')
 	{
-		dest[i] = scr[j];
+		dest[i] = src[j];
 		i++;
 		j++;
 	}
