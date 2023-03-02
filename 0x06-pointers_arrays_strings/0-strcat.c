@@ -1,4 +1,3 @@
-#include "main.h"
 /**
  * _strcat - function that cats two strings
  * @dest: destination
