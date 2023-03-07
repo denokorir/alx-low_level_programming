@@ -26,4 +26,13 @@ src: A pointer to the source memory area, where the data will be copied from.
 n: The number of bytes to copy.
 The function then uses a while loop to copy n bytes of data from the source to the destination memory area, byte-by-byte. It does this by using two char pointers, d and s, which are initially set to dest and src, respectively. On each iteration of the loop, the function copies the byte pointed to by s to the location pointed to by d, and then increments both d and s to point to the next byte in the respective memory areas. Finally, the function returns the dest pointer.
 */
+2. strchr
+Write a function that locates a character in a string.
+
+Prototype: char *_strchr(char *s, char c);
+Returns a pointer to the first occurrence of the character c in the string s, or NULL if the character is not found
+/*
+The function uses a loop to iterate over the characters in the string, and checks if each character is equal to the character we're looking for. If a match is found, the pointer to the character is returned. If no match is found, the function returns NULL.
+*/
+
 
