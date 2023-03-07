@@ -54,4 +54,9 @@ Once the loop terminates, the function returns the final value of count, which r
 Note that this implementation assumes that the input strings s and accept are null-terminated, and that the function does not modify these strings.
 */
 
+4.strpbrk
+Write a function that searches a string for any of a set of bytes.
 
+Prototype: char *_strpbrk(char *s, char *accept);
+The _strpbrk() function locates the first occurrence in the string s of any of the bytes in the string accept
+Returns a pointer to the byte in s that matches one of the bytes in accept, or NULL if no such byte is found
