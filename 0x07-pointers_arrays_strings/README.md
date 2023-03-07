@@ -35,4 +35,23 @@ Returns a pointer to the first occurrence of the character c in the string s, or
 The function uses a loop to iterate over the characters in the string, and checks if each character is equal to the character we're looking for. If a match is found, the pointer to the character is returned. If no match is found, the function returns NULL.
 */
 
+3. strspn
+Write a function that gets the length of a prefix substring.
+
+Prototype: unsigned int _strspn(char *s, char *accept);
+Returns the number of bytes in the initial segment of s which consist only of bytes from accept
+/*
+The function takes two arguments: a pointer to the string s and a pointer to the string accept. It returns an unsigned integer, which represents the number of bytes in the initial segment of s that consist only of bytes from accept.
+
+The function first initializes a counter variable count to 0 and a pointer variable p to point to the first character of s.
+
+Then, it enters a loop that continues as long as *p is not the null character and strchr(accept, *p) returns a non-null pointer. The strchr function searches for the first occurrence of *p in the string accept, and returns a pointer to that character if found, or NULL otherwise.
+
+Inside the loop, the function increments the count variable and advances the p pointer to the next character of s.
+
+Once the loop terminates, the function returns the final value of count, which represents the number of characters in the initial segment of s that consist only of characters from accept.
+
+Note that this implementation assumes that the input strings s and accept are null-terminated, and that the function does not modify these strings.
+*/
+
 
