@@ -74,4 +74,25 @@ Write a function that prints the chessboard
 This code creates a 2-dimensional array of characters to represent the chessboard. Each square on the board is either a "W" or "B" to represent a white or black square. It then loops through the array and prints each character with a space in between, and a newline character after each row.
 */
 
+7. Write a function that prints the sum of the two diagonals of a square matrix of integers.
+
+Prototype: void print_diagsums(int *a, int size);
+Format: see example
+You are allowed to use the standard library
+/*
+#include <stdio.h>
+
+void printDiagonalSums(int matrix[][100], int size) {
+    int i, j;
+    int sum1 = 0, sum2 = 0;
+    
+    for (i = 0; i < size; i++) {
+        sum1 += matrix[i][i];           // Add elements from top-left to bottom-right diagonal
+        sum2 += matrix[i][size-i-1];    // Add elements from top-right to bottom-left diagonal
+    }
+    
+    printf("Sum of the top-left to bottom-right diagonal: %d\n", sum1);
+    printf("Sum of the top-right to bottom-left diagonal: %d\n", sum2);
+}
+*/
 
