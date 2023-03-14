@@ -12,10 +12,10 @@ int **alloc_grid(int width, int height)
 	/*declare a * to a * to an int*/
 	int **ptr;
 	/*declare two int vars for height and width*/
-	int h, w;
+	int w, h;
 
 	/*check validity of dimensions*/
-	if (height <= 0 || width <= 0)
+	if (width <= 0 || height <= 0)
 		return (NULL);
 
 	/*allocate memory for rows of the 2D array*/
