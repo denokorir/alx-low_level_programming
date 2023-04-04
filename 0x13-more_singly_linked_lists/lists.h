@@ -9,18 +9,16 @@
  * struct listint_s - singly linked list
  * @n: integer
  * @next: points to the next node
- *
  * Description: singly linked list node structure
- * 
  */
 typedef struct listint_s
 {
-    int n;
-    struct listint_s *next;
+int n;
+struct listint_s *next;
 } listint_t;
 
 /**
- * _putchar - prints character c 
+ * _putchar - prints character c
  * @c: char to print
  * Return: 1 on success, -1 if it fails
  */
