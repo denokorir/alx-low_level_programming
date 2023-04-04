@@ -18,16 +18,6 @@ int n;
 struct listint_s *next;
 } listint_t;
 
-/**
- * _putchar - prints character c
- * @c: char to print
- * Return: 1 on success, -1 if it fails
- *
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
-*/
 size_t print_listint(const listint_t *h);
 size_t listint_len(const listint_t *h);
 listint_t *add_nodeint(listint_t **head, const int n);
